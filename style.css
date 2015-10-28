@@ -1,0 +1,32 @@
+* {
+  margin: 0; }
+
+ul {
+  margin-top: 20px;
+  position: relative; }
+
+li.whiteKey {
+  /*margin-bottom: 1em;*/
+  display: inline-block;
+  font-size: 1.5em;
+  border: 0.75px solid black;
+  width: 75px;
+  margin-right: -3.9px;
+  height: 450px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: inset 0 0 3px #666;
+  padding: 2px; }
+li.blackKey {
+  display: inline-block;
+  width: 45px;
+  height: 275px;
+  background-color: black;
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+  left: -25px;
+  top: -180px;
+  box-shadow: inset 0 0 2px white; }
+li.afterBlack {
+  margin-left: -50px; }
+
+/*# sourceMappingURL=style.css.map */
