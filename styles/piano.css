@@ -1,11 +1,12 @@
-* {
-  margin: 0; }
+.pianoWrapper {
+  margin: 0 auto; }
 
 ul {
   margin-top: 20px;
-  position: relative; }
+  text-align: center; }
 
 li.whiteKey {
+  background-color: #fff;
   /*margin-bottom: 1em;*/
   display: inline-block;
   font-size: 1.5em;
@@ -14,8 +15,11 @@ li.whiteKey {
   margin-right: -3.9px;
   height: 450px;
   border-radius: 0px 0px 10px 10px;
-  box-shadow: inset 0 0 3px #666;
+  box-shadow: inset 0 0 5px #666;
   padding: 2px; }
+  li.whiteKey:active {
+    box-shadow: inset 0 0 12px #666;
+    background-color: tomato; }
 li.blackKey {
   display: inline-block;
   width: 45px;
@@ -24,9 +28,11 @@ li.blackKey {
   border-radius: 0px 0px 10px 10px;
   position: relative;
   left: -25px;
-  top: -180px;
-  box-shadow: inset 0 0 2px white; }
+  top: -179px;
+  border: 1px solid grey; }
+  li.blackKey:active {
+    background-color: tomato; }
 li.afterBlack {
-  margin-left: -50px; }
+  margin-left: -51px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=piano.css.map */

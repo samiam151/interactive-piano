@@ -5,12 +5,11 @@ body {
   background-color: #fff; }
 
 .pianoWrapper {
-  margin: 0 auto;
-  width: 60%; }
+  margin: 0 auto; }
 
 ul {
   margin-top: 20px;
-  position: relative; }
+  text-align: center; }
 
 li.whiteKey {
   background-color: #fff;
@@ -37,7 +36,9 @@ li.blackKey {
   left: -25px;
   top: -179px;
   border: 1px solid grey; }
+  li.blackKey:active {
+    background-color: tomato; }
 li.afterBlack {
   margin-left: -51px; }
 
-/*# sourceMappingURL=piano.css.map */
+/*# sourceMappingURL=style.css.map */

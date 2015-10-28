@@ -3,36 +3,53 @@
 <head>
    <meta charset="utf-8">
    <title>Interactive Piano</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-   <ul>
-      <!-- C -->
-      <li class="whiteKey" data-key="c" ></li>
+
+   <!-- THE PIANO -->
+   <div class="pianoWrapper">
+      <ul>
+         <!-- OCTAVE ONE -->
+         <!-- C -->
+         <li class="whiteKey" data-key="c" ></li>
          <!-- C# -->
          <li class="blackKey" data-key="cs"></li>
-      <!-- D -->   
-      <li class="whiteKey afterBlack" data-key="d" ></li>
+         <!-- D -->   
+         <li class="whiteKey afterBlack" data-key="d" ></li>
          <!-- Eb -->
          <li class="blackKey" data-key="ds"></li>
-      <!-- E -->
-      <li class="whiteKey afterBlack" data-key="e" ></li>
-      <!-- F -->
-      <li class="whiteKey" data-key="f" ></li>
+         <!-- E -->
+         <li class="whiteKey afterBlack" data-key="e" ></li>
+         <!-- F -->
+         <li class="whiteKey" data-key="f" ></li>
          <!-- F# -->
          <li class="blackKey" data-key="fs"></li>
-      <!-- G -->
-      <li class="whiteKey afterBlack" data-key="g" ></li>
+         <!-- G -->
+         <li class="whiteKey afterBlack" data-key="g" ></li>
          <!-- Ab -->
          <li class="blackKey" data-key="gs"></li>
-      <!-- A -->   
-      <li class="whiteKey afterBlack" data-key="a" ></li>  
+         <!-- A -->   
+         <li class="whiteKey afterBlack" data-key="a" ></li>  
           <!-- Bb -->
           <li class="blackKey" data-key="as"></li>
-      <!-- B -->    
-      <li class="whiteKey afterBlack" data-key="b" ></li>
-      <!-- C -->
-      <li class="whiteKey " data-key="c8va" ></li>
-   </ul>
-<script type="text/javascript" src="script.js"></script>
+         <!-- B -->    
+         <li class="whiteKey afterBlack" data-key="b" ></li>
+
+         <!-- OCTAVE TWO -->
+         <!-- C2 -->
+         <li class="whiteKey" data-key="c2" ></li>
+         <!-- C#2 -->
+         <li class="blackKey" data-key="cs2"></li>
+         <!-- D2 -->   
+         <li class="whiteKey afterBlack" data-key="d2" ></li>
+         <!-- Eb2 -->
+         <li class="blackKey" data-key="ds2"></li>
+         <!-- E2 -->
+         <li class="whiteKey afterBlack" data-key="e2" ></li>
+      </ul>
+   </div>
+
+<script type="text/javascript" src="scripts/piano.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
 </body>

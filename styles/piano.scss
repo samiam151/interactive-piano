@@ -1,16 +1,16 @@
-* {
-   margin: 0;
+.pianoWrapper {
+  margin: 0 auto;
 }
 
 ul {
    margin-top: 20px;
-   position: relative;
-   
+   text-align: center;
 }
 
 li {
 
   &.whiteKey{
+    background-color: #fff;
     /*margin-bottom: 1em;*/
     display: inline-block;
     font-size: 1.5em;
@@ -19,9 +19,14 @@ li {
     margin-right: -3.9px;
     height: 450px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: inset 0 0 3px #666;
+    box-shadow: inset 0 0 5px #666;
 
     padding: 2px;
+
+    &:active {
+      box-shadow: inset 0 0 12px #666;
+      background-color: tomato;
+    }
   }
 
   
@@ -34,14 +39,20 @@ li {
     border-radius: 0px 0px 10px 10px;
     position: relative;
     left: -25px;
-    top: -180px;
-    box-shadow: inset 0 0 2px white;
+    top: -179px;
+    //box-shadow: inset 0 0 5px white;
+    border: 1px solid grey;
+    //border-bottom: 10px solid red;
 
-
+    &:active {
+      // border-bottom: 5px solid black;
+      // top: -179px + 4;
+      background-color: tomato;  
+    }
   }
   
   &.afterBlack {
-    margin-left: -50px;
+    margin-left: -51px;
   }
 
 }
