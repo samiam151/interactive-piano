@@ -4,11 +4,7 @@ var $ = function(selector){
 
 $('ul').addEventListener('click', function(event){
    if (event.target.tagName === 'LI') {
-      playSound(event);
+      piano.playSound(event);
+      piano.test();
    };
 });
-
-function playSound(event){
-   var target = event.target.dataset.key;
-   console.log(target, typeof target);
-}
