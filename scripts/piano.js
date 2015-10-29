@@ -1,48 +1,38 @@
 var piano = (function(){
-   var context, bufferLoader, source1, source2;
+   var context, buffer;
 
-   // function initSounds(){
-   //    context = new (window.AudioContext || window.webkitAudioContext)();
-   //    bufferLoader = new BufferLoader(
-   //       context,
-   //       [
-   //          'assets/tropez.mp3',
-   //          'assets/twoCities.mp3'
-   //       ],
-   //       finishedLoading
-   //    );
-   //    bufferLoader.load();
-   // }
+   function init(){
+      context = new (window.AudioContext || window.webkitAudioContext)();
 
-   
-   
-   // function finishedLoading(bufferList) {
-   //   console.log('made it here');
-   //   console.log(bufferList[0]);
+      var request = new XMLHttpRequest();
+      request.open('GET', 'assets/twoCities.mp3',true);
+      request.responseType = 'arraybuffer';
+     
+      request.onload = function(){
+         var audioData = request.response;
+         console.log(audioData);
+         context.decodeAudioData(audioData, function(buf){
+            buffer = buf;
+            console.log('buffer is ' + buffer);
+         });
+      };
+      
+      request.send();
+   }
 
-   //   // Create two sources and play them both together.
-   //   source1 = context.createBufferSource();
-   //   source2 = context.createBufferSource();
-   //   source1.buffer = bufferList[0];
-   //   source2.buffer = bufferList[1];
+   function playSound(){
+      source = context.createBufferSource();
+         console.log("source = " + source);
+      source.buffer = buffer;
+         console.log("source.buffer = " + source.buffer);
+      source.connect(context.destination);
+      source.start(0);
+         console.log('source is playing');
+   }
 
-   //   source1.connect(context.destination);
-   //   source2.connect(context.destination);
- 
-   //    source1.start(0); 
-   //    return source1;
-   // }
-
-
-   // function playSound(event){
-   //    var target = event.target.dataset.key;
-   //    console.log(target, typeof target);
-   // }
-
-   // return {
-   //    source1 : source1,
-   //    initSounds : initSounds,
-   //    playSound : playSound,
-   // };
+   return {
+      init : init,
+      playSound : playSound
+   };
 
 }());

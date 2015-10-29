@@ -2,10 +2,10 @@ var $ = function(selector){
    return document.querySelector(selector);
 };
 
-piano.initSounds();
+window.onload = piano.init();
 
 $('ul').addEventListener('click', function(event){
    if (event.target.tagName === 'LI') {
-      piano.playSound(event);
+      piano.playSound();
    };
 });
