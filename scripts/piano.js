@@ -5,7 +5,8 @@ var piano = (function(){
       context = new (window.AudioContext || window.webkitAudioContext)();
 
       var request = new XMLHttpRequest();
-      request.open('GET', 'assets/twoCities.mp3',true);
+      var url = 'assets/twoCities.wav' || 'assets/twoCities.mp3'
+      request.open('GET', url ,true);
       request.responseType = 'arraybuffer';
      
       request.onload = function(){
