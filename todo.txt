@@ -1,3 +1,3 @@
-1. Validate for type if audio file based on browser
-2. Put on Github
-3. Make a loading screen, clear when buffer is ready
+- Make a loading screen, clear when buffer is ready
+- Why is sound not playing in Firefox?!
+- Find actual samples for piano
