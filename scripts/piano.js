@@ -15,9 +15,6 @@ var piano = (function(){
      
       request.onload = function(){
          var audioData = request.response;
-         //------------------------------------------
-         console.log(audioData);
-         //------------------------------------------
          context.decodeAudioData(audioData, function(buf){
             buffer = buf;
             //------------------------------------------
@@ -83,4 +80,4 @@ var piano = (function(){
       playSound : playSound
    };
 
-}());
+}());11

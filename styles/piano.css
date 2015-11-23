@@ -1,5 +1,6 @@
 .pianoWrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: none; }
 
 ul {
   margin-top: 20px;

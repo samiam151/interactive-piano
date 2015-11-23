@@ -4,6 +4,7 @@ var $ = function(selector){
 
 window.addEventListener('load', function(){
    piano.init();
+   clearLoadingScreen();
 });
 
 $('ul').addEventListener('click', function(event){
@@ -11,3 +12,10 @@ $('ul').addEventListener('click', function(event){
       piano.playSound();
    };
 });
+
+var clearLoadingScreen = function(){
+   $('.pianoWrapper').style.display = "initial";
+   $('.loadingScreen').style.display = "none";
+
+   console.log("loading done");
+}
