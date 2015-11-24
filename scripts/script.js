@@ -4,12 +4,12 @@ var $ = function(selector){
 
 window.addEventListener('load', function(){
    piano.init();
-   //clearLoadingScreen();
+   setTimeout(clearLoadingScreen, 2000);
 });
 
 $('ul').addEventListener('click', function(event){
    if (event.target.tagName === 'LI') {
-      piano.playSound();
+      piano.playSound(event);
    };
 });
 
