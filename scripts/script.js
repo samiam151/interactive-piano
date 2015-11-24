@@ -4,7 +4,7 @@ var $ = function(selector){
 
 window.addEventListener('load', function(){
    piano.init();
-   clearLoadingScreen();
+   //clearLoadingScreen();
 });
 
 $('ul').addEventListener('click', function(event){
