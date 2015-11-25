@@ -1,3 +1,7 @@
+// REVEALING MODULE FOR THE PIANO
+// returns init()
+// returns plasySounds(event, key)
+
 var piano = (function(){
   var context, buffer, globalBufferList = [];
 
@@ -74,24 +78,74 @@ var piano = (function(){
     case "audio/mp3":
     case "audio/mpeg3":
       return 'mp3';
+      break;
     case "audio/wav":
     case "audio/wave":
       return 'wav';
+      break;
     case "audio/ogg":
       return 'ogg';
+      break;
     }
   }
 
-  function playSound(e){
+  function playSound(e, key){
+    var keyPressed, targetNote;
+
+    if(key){
+      console.log(key);
+      switch(key){
+        case 'A':
+          keyPressed = 1; break;
+        case 'W':
+          keyPressed = 2; break;
+        case 'S':
+          keyPressed = 3; break;
+        case 'E':
+          keyPressed = 4; break;
+        case 'D':
+          keyPressed = 5; break;
+        case 'F':
+          keyPressed = 6; break;
+        case 'T':
+          keyPressed = 7; break;
+        case 'G':
+          keyPressed = 8; break;
+        case 'Y':
+          keyPressed = 9; break;
+        case 'H':
+          keyPressed = 10; break;
+        case 'U':
+          keyPressed = 11; break;
+        case 'J':
+          keyPressed = 12; break;
+        case 'K':
+          keyPressed = 13; break;
+        case 'O':
+          keyPressed = 14; break;
+        case 'L':
+          keyPressed = 15; break;
+        case 'L':
+          keyPressed = 16; break;
+        case 'P':
+          keyPressed = 16; break;
+        case ';':
+          //keyPressed = 7;
+        default: 
+          keypressed = null; break;
+      };
+      targetNote = keyPressed;
+    } else {
+      targetNote = parseInt(e.target.dataset.key);
+    }
+
     // Get the key that was played
-    var targetNote = parseInt(e.target.dataset.key);
     console.log(targetNote); 
 
     var source = context.createBufferSource();
     var gainNode = context.createGain();
     gainNode.gain.value = 1.0;
 
-    console.log(globalBufferList[targetNote-1]);
     source.buffer = globalBufferList[targetNote-1];
     source.connect(gainNode);
     gainNode.connect(context.destination);
