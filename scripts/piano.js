@@ -153,6 +153,10 @@ var piano = (function(){
     console.log('source is playing');
   }
 
+  function lightKey(){
+    
+  }
+
   return {
     init : init,
     playSound : playSound

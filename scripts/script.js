@@ -23,6 +23,9 @@
    // MAKE THE SOUNDS PLAY WHEN YOU PRESS THE KEYPAD
    $('body').addEventListener('keydown', respond, false);
 
+
+
+
    function respond(e){
       var key = String.fromCharCode(e.keyCode);
       piano.playSound(e, key);
