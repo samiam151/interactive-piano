@@ -8,7 +8,6 @@ ul {
 
 li.whiteKey {
   background-color: #fff;
-  /*margin-bottom: 1em;*/
   display: inline-block;
   font-size: 1.5em;
   border: 0.75px solid black;
@@ -18,9 +17,9 @@ li.whiteKey {
   border-radius: 0px 0px 10px 10px;
   box-shadow: inset 0 0 5px #666;
   padding: 2px; }
-  li.whiteKey:active {
-    box-shadow: inset 0 0 12px #666;
-    background-color: tomato; }
+li.lightUp {
+  box-shadow: inset 0 0 12px #666;
+  background-color: tomato; }
 li.blackKey {
   display: inline-block;
   width: 45px;
