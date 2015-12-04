@@ -1,9 +1,11 @@
 // REVEALING MODULE FOR THE PIANO
 // returns init()
-// returns plasySounds(event, key)
+// returns playSounds(e, key)
 
 var piano = (function(){
-  var context, buffer, globalBufferList = [];
+  var context, 
+      buffer, 
+      globalBufferList = [];
 
   function init(){
     var ext, preUrl = '';
@@ -92,8 +94,9 @@ var piano = (function(){
   function playSound(e, key){
     var keyPressed, targetNote;
 
+    // Sets the "targetKey", which determines which
+    // index in the array of sounds [bufferList] 
     if(key){
-      console.log(key);
       switch(key){
         case 'A':
           keyPressed = 1; break;
@@ -130,18 +133,17 @@ var piano = (function(){
         case 'P':
           keyPressed = 16; break;
         case ';':
-          //keyPressed = 7;
+          keyPressed = 17; break;
         default: 
           keypressed = null; break;
+          return;
       };
       targetNote = keyPressed;
     } else {
       targetNote = parseInt(e.target.dataset.key);
-    }
+    }   
 
-    // Get the key that was played
-    console.log(targetNote); 
-
+    // Play the sound
     var source = context.createBufferSource();
     var gainNode = context.createGain();
     gainNode.gain.value = 1.0;
@@ -151,10 +153,71 @@ var piano = (function(){
     gainNode.connect(context.destination);
     source.start(0);
     console.log('source is playing');
-  }
 
-  function lightKey(){
+    // Light the keys  
+    var target;
+    if(e.target.tagName === 'LI'){
+      target = e.target;
+    } else {
+      switch(keyPressed){
+        case 1:
+          target = document.querySelector('li[data-key="1"]');
+          break;
+        case 2:
+          target = document.querySelector('li[data-key="2"]');
+          break;
+        case 3:
+          target = document.querySelector('li[data-key="3"]');
+          break;
+        case 4:
+          target = document.querySelector('li[data-key="4"]');
+          break;
+        case 5:
+          target = document.querySelector('li[data-key="5"]');
+          break;
+        case 6:
+          target = document.querySelector('li[data-key="6"]');
+          break;
+        case 7:
+          target = document.querySelector('li[data-key="7"]');
+          break;
+        case 8:
+          target = document.querySelector('li[data-key="8"]');
+          break;
+        case 9:
+          target = document.querySelector('li[data-key="9"]');
+          break;
+        case 10:
+          target = document.querySelector('li[data-key="10"]');
+          break;
+        case 11:
+          target = document.querySelector('li[data-key="11"]');
+          break;
+        case 12:
+          target = document.querySelector('li[data-key="12"]');
+          break;
+        case 13:
+          target = document.querySelector('li[data-key="13"]');
+          break;
+        case 14:
+          target = document.querySelector('li[data-key="14"]');
+          break;
+        case 15:
+          target = document.querySelector('li[data-key="15"]');
+          break;
+        case 16:
+          target = document.querySelector('li[data-key="16"]');
+          break;
+        case 17:
+          target = document.querySelector('li[data-key="17"]');
+          break;
+      }
+    }
     
+    target.classList.add("lightUp");
+    setTimeout(function(){
+      target.classList.remove('lightUp');
+    }, 150);
   }
 
   return {
@@ -163,25 +226,3 @@ var piano = (function(){
   };
 
 }());
-
-
-  // if(!context){
-  //    alert('Web Audio API not supported.');
-  // }
-
-  // var request = new XMLHttpRequest();
-  // var url = ('assets/twoCities' || 'assets/twoCities') + getCompatibleExtension();
-  // request.open('GET', url ,true);
-  // request.responseType = 'arraybuffer';
- 
-  // request.onload = function(){
-  //    var audioData = request.response;
-  //    context.decodeAudioData(audioData, function(buf){
-  //       buffer = buf;
-  //       //------------------------------------------
-  //       console.log('buffer ready');
-  //       //------------------------------------------
-  //    });
-  // };
-  
-  // request.send();

@@ -1,3 +1,2 @@
-- Make a loading screen, clear when buffer is ready
-- Why is sound not playing in Firefox?!
-- Find actual samples for piano
+- Fix loading screen
+- Plan on design

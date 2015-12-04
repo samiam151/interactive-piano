@@ -12,7 +12,6 @@ li {
 
   &.whiteKey{
     background-color: #fff;
-    /*margin-bottom: 1em;*/
     display: inline-block;
     font-size: 1.5em;
     border: 0.75px solid black;
@@ -21,13 +20,20 @@ li {
     height: 450px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: inset 0 0 5px #666;
+    -webkit-box-shadow: inset 0 0 5px #666;
 
     padding: 2px;
 
-    &:active {
-      box-shadow: inset 0 0 12px #666;
-      background-color: tomato;
-    }
+    // &:active {
+    //   box-shadow: inset 0 0 12px #666;
+    //   background-color: tomato;
+    // }
+  }
+
+  &.lightUp {
+    box-shadow: inset 0 0 12px #666;
+    background-color: tomato;
+    // background-color: black
   }
 
   
@@ -57,3 +63,5 @@ li {
   }
 
 }
+
+
