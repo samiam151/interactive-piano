@@ -218,6 +218,7 @@ var piano = (function(){
     setTimeout(function(){
       target.classList.remove('lightUp');
     }, 150);
+
   }
 
   return {

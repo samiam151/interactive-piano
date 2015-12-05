@@ -26,6 +26,7 @@
       piano.playSound(e, key);
    }, false);
 
+
    // FN: CLEARS THE LOADING SCREEN
    function clearLoadingScreen(){
       $('.pianoWrapper').style.display = "initial";
