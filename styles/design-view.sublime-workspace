@@ -520,7 +520,7 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/Applications/MAMP/htdocs/interactivePiano/index.html",
 			"settings":
 			{
 				"buffer_size": 2268,
@@ -528,7 +528,7 @@
 			}
 		},
 		{
-			"file": "todo.txt",
+			"file": "/Applications/MAMP/htdocs/interactivePiano/todo.txt",
 			"settings":
 			{
 				"buffer_size": 37,
@@ -536,7 +536,7 @@
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "/Applications/MAMP/htdocs/interactivePiano/README.md",
 			"settings":
 			{
 				"buffer_size": 209,
@@ -544,7 +544,7 @@
 			}
 		},
 		{
-			"file": "styles/globals.scss",
+			"file": "globals.scss",
 			"settings":
 			{
 				"buffer_size": 138,
@@ -552,7 +552,7 @@
 			}
 		},
 		{
-			"file": "styles/style.scss",
+			"file": "style.scss",
 			"settings":
 			{
 				"buffer_size": 93,
@@ -560,7 +560,7 @@
 			}
 		},
 		{
-			"file": "styles/heading.scss",
+			"file": "heading.scss",
 			"settings":
 			{
 				"buffer_size": 34,
@@ -849,7 +849,7 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/Applications/MAMP/htdocs/interactivePiano/index.html",
 					"semi_transient": false,
 					"settings":
 					{
@@ -879,7 +879,7 @@
 				},
 				{
 					"buffer": 1,
-					"file": "todo.txt",
+					"file": "/Applications/MAMP/htdocs/interactivePiano/todo.txt",
 					"semi_transient": false,
 					"settings":
 					{
@@ -907,7 +907,7 @@
 				},
 				{
 					"buffer": 2,
-					"file": "README.md",
+					"file": "/Applications/MAMP/htdocs/interactivePiano/README.md",
 					"semi_transient": false,
 					"settings":
 					{
@@ -941,7 +941,7 @@
 			[
 				{
 					"buffer": 3,
-					"file": "styles/globals.scss",
+					"file": "globals.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -969,7 +969,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "styles/style.scss",
+					"file": "style.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -997,7 +997,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "styles/heading.scss",
+					"file": "heading.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1073,7 +1073,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
-	"project": "piano.sublime-project",
+	"project": "/Applications/MAMP/htdocs/interactivePiano/piano.sublime-project",
 	"replace":
 	{
 		"height": 82.0

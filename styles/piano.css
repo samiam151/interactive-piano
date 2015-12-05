@@ -1,10 +1,14 @@
-.pianoWrapper {
-  margin: 0 auto;
-  display: none; }
+.pianoAndInstructions {
+  width: 100%; }
 
-ul {
-  margin-top: 20px;
-  text-align: center; }
+.piano {
+  width: 84%;
+  display: inline-block; }
+
+.instructions {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top; }
 
 li.whiteKey {
   background-color: #fff;

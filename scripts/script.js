@@ -27,11 +27,11 @@
    }, false);
 
    // FN: CLEARS THE LOADING SCREEN
-   function clearLoadingScreen(){
-      $('.pianoWrapper').style.display = "initial";
-      // $('.loadingScreen').style.display = "none";
+   // function clearLoadingScreen(){
+   //    $('.piano').style.display = "initial";
+   //    // $('.loadingScreen').style.display = "none";
 
-      console.log("loading done");
-   }
+   //    console.log("loading done");
+   // }
 
 }());
