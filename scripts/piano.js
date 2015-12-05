@@ -146,7 +146,7 @@ var piano = (function(){
     // Play the sound
     var source = context.createBufferSource();
     var gainNode = context.createGain();
-    gainNode.gain.value = 1.0;
+    gainNode.gain.value = 1.35;
 
     source.buffer = globalBufferList[targetNote-1];
     source.connect(gainNode);

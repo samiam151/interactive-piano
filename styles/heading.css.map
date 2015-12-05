@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACN,UAAU,EAAE,IAAI",
+"sources": ["heading.scss"],
+"names": [],
+"file": "heading.css"
+}

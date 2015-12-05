@@ -2,13 +2,21 @@
   margin: 0; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: 'Rokkitt', serif; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
 
 .loadingScreen {
   position: absolute;
   height: 500px;
   width: 100%;
   background-color: tomato; }
+
+.heading {
+  margin-top: 20px; }
 
 .pianoWrapper {
   margin: 0 auto;

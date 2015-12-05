@@ -3,54 +3,67 @@
 <head>
    <meta charset="utf-8">
    <title>Interactive Piano</title>
+   <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-   
-   <div class="loadingScreen"></div>
-   <!-- THE PIANO -->
-   <div class="pianoWrapper">
-      <ul>
-         <!-- OCTAVE ONE -->
-         <!-- C -->
-         <li class="whiteKey" data-key="1" ></li>
-         <!-- C# -->
-         <li class="blackKey" data-key="2"></li>
-         <!-- D -->   
-         <li class="whiteKey afterBlack" data-key="3" ></li>
-         <!-- Eb -->
-         <li class="blackKey" data-key="4"></li>
-         <!-- E -->
-         <li class="whiteKey afterBlack" data-key="5" ></li>
-         <!-- F -->
-         <li class="whiteKey" data-key="6" ></li>
-         <!-- F# -->
-         <li class="blackKey" data-key="7"></li>
-         <!-- G -->
-         <li class="whiteKey afterBlack" data-key="8" ></li>
-         <!-- Ab -->
-         <li class="blackKey" data-key="9"></li>
-         <!-- A -->   
-         <li class="whiteKey afterBlack" data-key="10" ></li>  
-          <!-- Bb -->
-          <li class="blackKey" data-key="11"></li>
-         <!-- B -->    
-         <li class="whiteKey afterBlack" data-key="12" ></li>
+   <!-- <div class="loadingScreen"></div> -->
+   <div class="container">
 
-         <!-- OCTAVE TWO -->
-         <!-- C2 -->
-         <li class="whiteKey" data-key="13" ></li>
-         <!-- C#2 -->
-         <li class="blackKey" data-key="14"></li>
-         <!-- D2 -->   
-         <li class="whiteKey afterBlack" data-key="15" ></li>
-         <!-- Eb2 -->
-         <li class="blackKey" data-key="16"></li>
-         <!-- E2 -->
-         <li class="whiteKey afterBlack" data-key="17" ></li>
-      </ul>
+      
+
+      <!-- HEADING -->
+      <div class="heading">
+         <p>Web Audio API Demo:</p>
+         <h1>The Piano</h1>
+         <p><i>by Nicolas Sam</i></p>
+      </div>
+
+      <!-- THE PIANO -->
+      <div class="pianoWrapper">
+         <ul>
+            <!-- OCTAVE ONE -->
+            <!-- C -->
+            <li class="whiteKey" data-key="1" ></li>
+            <!-- C# -->
+            <li class="blackKey" data-key="2"></li>
+            <!-- D -->   
+            <li class="whiteKey afterBlack" data-key="3" ></li>
+            <!-- Eb -->
+            <li class="blackKey" data-key="4"></li>
+            <!-- E -->
+            <li class="whiteKey afterBlack" data-key="5" ></li>
+            <!-- F -->
+            <li class="whiteKey" data-key="6" ></li>
+            <!-- F# -->
+            <li class="blackKey" data-key="7"></li>
+            <!-- G -->
+            <li class="whiteKey afterBlack" data-key="8" ></li>
+            <!-- Ab -->
+            <li class="blackKey" data-key="9"></li>
+            <!-- A -->   
+            <li class="whiteKey afterBlack" data-key="10" ></li>  
+             <!-- Bb -->
+             <li class="blackKey" data-key="11"></li>
+            <!-- B -->    
+            <li class="whiteKey afterBlack" data-key="12" ></li>
+
+            <!-- OCTAVE TWO -->
+            <!-- C2 -->
+            <li class="whiteKey" data-key="13" ></li>
+            <!-- C#2 -->
+            <li class="blackKey" data-key="14"></li>
+            <!-- D2 -->   
+            <li class="whiteKey afterBlack" data-key="15" ></li>
+            <!-- Eb2 -->
+            <li class="blackKey" data-key="16"></li>
+            <!-- E2 -->
+            <li class="whiteKey afterBlack" data-key="17" ></li>
+         </ul>
+      </div>
+
+
    </div>
-    <!-- loadingScreen -->
 <script type="text/javascript" src="scripts/buffer-loader.js"></script>
 <script type="text/javascript" src="scripts/piano.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
